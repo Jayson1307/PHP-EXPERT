@@ -37,3 +37,8 @@ $games = [
         'prijs' => '40.00'
     ]
 ];
+ echo 'speelgoed '. $speelgoed[0]['naam']. 
+ ' uit de categorie '. $speelgoed[0]['soort']. ' kost '. $speelgoed[0]['prijs']. '<br>';
+ echo 'de game '. $games['sport']['naam']. ' van de uitgever '. $games['sport']['uitgever'].
+ ' kost '. $games['sport']['prijs'] ; 
+?>
