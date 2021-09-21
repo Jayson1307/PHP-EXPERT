@@ -78,7 +78,28 @@
     ?>
     <!-- Pas de code hieronder aan  -->
     <!-- Loop door de array $nieuwsberichten en toon de gegevens in de juist HTML-tags  -->
+    <?php
+        foreach ($nieuwsberichten as $object => $value) {
+            // Onderwerp
+            echo "<h1 class=title>" . $object . "</h1>";
 
+            foreach ($value as $value2) {
+
+                // Kopje:
+                echo "<h4 class=title>" . $value2['titel'] . "</h4>";
+
+                // Beschrijving
+                echo "<p class=title>" . $value2['beschrijving'] . "</p>";
+
+                // Plaatje
+                echo "<img src=" . $value2['image'] . ">";
+            }
+
+            /* Zorgt voor betere onderscheiding. */
+            for ($i = 0; $i < 3; $i++)
+                echo "<br>";
+        }
+        ?>
 
     <h1></h1>
     <div class="content">
